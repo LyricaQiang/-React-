@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>React App</title>
+</head>
+
+<body>
+  <!-- rem计算 -->
+  <script>
+    function computed() {
+      let HTML = document.documentElement,
+        winW = HTML.clientWidth;
+      HTML.style.fontSize = winW / 750 * 100 + 'px';
+    }
+    computed();
+    window.addEventListener('resize', computed);
+  </script>
+  <div id="root"></div>
+  <script src="%PUBLIC_URL%/utils.js."></script>
+</body>
+
+</html>

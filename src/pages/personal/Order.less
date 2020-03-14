@@ -1,0 +1,128 @@
+.personalOrder {
+	padding-top: .9rem;
+
+	.navBox {
+		display: flex;
+		background: #FFF;
+
+		a {
+			box-sizing: border-box;
+			margin: 0 2%;
+			width: 16%;
+			height: .96rem;
+			line-height: .92rem;
+			text-align: center;
+			color: #000;
+			font-size: .26rem;
+			border-bottom: .04rem solid transparent;
+
+			&.active {
+				color: rgb(134, 107, 68);
+				border-bottom-color: rgb(134, 107, 68);
+			}
+		}
+	}
+
+	.noTip {
+		padding: .6rem 0 .2rem 0;
+		line-height: 1rem;
+		text-align: center;
+		color: #999;
+
+		i {
+			display: block;
+			margin: 0 auto;
+			width: 1.8rem;
+			height: 1.8rem;
+			background: url('../../assets/images/no_result_order.png') no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+
+	.list {
+		li {
+			margin-bottom: .2rem;
+			padding: .2rem;
+			padding-bottom: 0;
+			border-top: .02rem solid #D3D3D3;
+			background: #FFF;
+
+			.handle {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				height: 1rem;
+				border-top: .02rem solid rgb(233, 232, 232);
+
+				button {
+					margin-left: .2rem;
+					padding: 0 .4rem;
+					height: .56rem;
+					line-height: .56rem;
+					border: .02rem solid rgb(159, 128, 82);
+					background: #FFF;
+					color: rgb(159, 128, 82);
+
+					&.cancel {
+						border-color: #D3D3D3;
+						color: #999;
+					}
+				}
+			}
+
+			.info {
+				a {
+					display: block;
+					color: #000;
+				}
+
+				.top {
+					display: flex;
+
+					.pic {
+						width: 1.6rem;
+						height: 1.6rem;
+						background: #EEE;
+						border-radius: .2rem;
+
+						img {
+							display: block;
+							width: 100%;
+							height: 100%;
+						}
+					}
+
+					.title {
+						margin-left: .2rem;
+						width: 4rem;
+						line-height: .5rem;
+					}
+
+					.price {
+						margin-left: .2rem;
+						width: 1rem;
+						line-height: .5rem;
+						text-align: right;
+						color: #999;
+
+						span {
+							display: block;
+						}
+					}
+				}
+
+				.bottom {
+					text-align: right;
+					line-height: .8rem;
+
+					span {
+						margin-left: .1rem;
+						color: rgb(134, 107, 68);
+						font-size: .3rem;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+}

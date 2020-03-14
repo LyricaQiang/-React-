@@ -1,0 +1,122 @@
+.cartBox {
+	margin-bottom: 1.1rem;
+	margin-top: .9rem;
+
+	.list {
+		margin: 0 .2rem;
+		margin-bottom: .2rem;
+
+		a {
+			position: relative;
+			display: block;
+			box-sizing: border-box;
+			padding: .2rem;
+			padding-left: .56rem;
+			margin-bottom: .2rem;
+			background: #FFF;
+			color: #000;
+
+			.pic {
+				float: left;
+				margin-left: .2rem;
+				width: 1.72rem;
+				height: 1.72rem;
+				background: #EEE;
+
+				img {
+					display: block;
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			.desc {
+				float: left;
+				margin-left: .2rem;
+				width: 4.2rem;
+				line-height: .6rem;
+
+				p {
+					&:nth-of-type(2) {
+						color: #d96b6c;
+					}
+				}
+			}
+
+			.check {
+				position: absolute;
+				left: .2rem;
+				top: 50%;
+				transform: translateY(-50%);
+				width: .36rem;
+				height: .36rem;
+				background: url('../../assets/images/std_icon_checkbox_uncheck.png') no-repeat;
+				background-size: 100% 100%;
+
+				&.active {
+					background: url('../../assets/images/std_icon_checkbox_check.png') no-repeat;
+					background-size: 100% 100%;
+				}
+			}
+
+			.count {
+				position: absolute;
+				right: .2rem;
+				bottom: .2rem;
+				display: flex;
+				align-items: center;
+
+				input {
+					// margin: 0 .2rem;
+					width: .8rem;
+					height: .4rem;
+					line-height: .4rem;
+					text-align: center;
+					background: #EEE;
+					border: 0;
+				}
+
+				i {
+					width: .52rem;
+					height: .4rem;
+
+					&:nth-of-type(1) {
+						background: url('../../assets/images/cart_icon_minus_nor.png') no-repeat;
+						background-size: 100% 100%;
+
+						&.disable {
+							background: url('../../assets/images/cart_icon_minus_disable.png') no-repeat;
+							background-size: 100% 100%;
+						}
+					}
+
+					&:nth-of-type(2) {
+						background: url('../../assets/images/cart_icon_plus_nor.png') no-repeat;
+						background-size: 100% 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.noTip {
+		padding: .6rem 0 .2rem 0;
+		line-height: 1rem;
+		text-align: center;
+		color: #999;
+
+		i {
+			display: block;
+			margin: 0 auto;
+			width: 1.8rem;
+			height: 1.8rem;
+			background: url('../../assets/images/no_result_cart.png') no-repeat;
+			background-size: 100% 100%;
+		}
+
+		a{
+			margin-left: .1rem;
+			color: blue;
+		}
+	}
+}
